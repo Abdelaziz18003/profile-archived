@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACA,qBAAsB;EAClB,cAAe;IACX,OAAO,EAAE,KAAK;ACItB,oBAAqB;EAClB,IAAI,EAAE,eAAe;;AAGxB,cAAe;EACX,IAAI,EAAE,eAAe;EACrB,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;;AAGrB,qCAAsC;EAClC,IAAI,EAAE,eAAe;;AAGzB,OAAQ;EACJ,UAAU,EAAE,WAAW;EACvB,MAAM,EAAE,IAAI",
+"sources": ["../../src/scss/_media-queries.scss","../../src/scss/main.scss"],
 "names": [],
 "file": "main.css"
 }

@@ -1,0 +1,6 @@
+//forcing the toggle button to appear on large screens
+@media (min-width: 0) {
+    .navbar-toggle {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+// imports ___________________________________________________________________________________________
+@import "_variables";
+@import "media-queries";
+
+// #01 header styling ________________________________________________________________________________
+
+// fixing right offcanvas sliding issu
+.navmenu-fixed-right {
+   left: auto !important;
+}
+
+.navbar-toggle {
+    left: auto !important;
+    float: right;
+    margin-left: 15px;
+}
+
+body.canvas-sliding, body.canvas-slid {
+    left: auto !important;
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+}
