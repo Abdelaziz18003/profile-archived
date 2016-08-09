@@ -9,25 +9,48 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-   <!-- off-canvas menu -->
-    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas">
-        <ul class="nav navmeu-nav">
-            <li><a href="">link1</a></li>
-            <li><a href="">link2</a></li>
-            <li><a href="">link3</a></li>
-        </ul>
-    </nav>
+   
+    <!-- header section -->
+    <header class="text-center">
+        
+        <!-- overlay div -->
+        <div class="overlay">
+
+           <!-- off-canvas menu -->
+            <nav id="navmenu" class="navmenu navmenu-inverse navmenu-fixed-right offcanvas">
+                <ul class="nav navmeu-nav">
+                    <li><a href="">link1</a></li>
+                    <li><a href="">link2</a></li>
+                    <li><a href="">link3</a></li>
+                </ul>
+            </nav>
+
+            <!-- horizontal navbar -->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="#"><img src="dist/img/logo-inverse.png" alt="logo"></a>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" 
+                            data-target="#navmenu" data-canvas="body">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <h1 class="text-center">
+                <b>Hi,</b><br>My name is Abdelaziz MOKHNACHE <br>I’m a Javascript developer 
+            </h1>
+
+            <a class="btn btn-default btn-lg" href="dist/pdf/resume-en.pdf">Download My Resume</a>
+
+            <div class="down-arrow"><a href=""><span class="fa fa-angle-down"></span></a></div>
+        </div>
+    </header>
     
-    <!-- horizontal navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu"
-                data-canvas="body">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
-    
+    <!-- about section -->
     
     
     <script src="dist/lib/jquery/jquery.min.js"></script>

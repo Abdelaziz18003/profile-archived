@@ -2,8 +2,35 @@
 @import "_variables";
 @import "media-queries";
 
+// general styling ___________________________________________________________________________________
+*{
+    color: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    color: white;
+}
+
+a, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+
 // #01 header styling ________________________________________________________________________________
 
+header {
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 0px;
+    
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 250px 0px 60px;
+    }
+}
 // fixing right offcanvas sliding issu
 .navmenu-fixed-right {
    left: auto !important;
@@ -19,7 +46,39 @@ body.canvas-sliding, body.canvas-slid {
     left: auto !important;
 }
 
+// navbar styling
 .navbar {
     background: transparent;
+    height: $heightNavbar;
     border: none;
+    
+    .navbar-brand {
+        padding-top: 25px;
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+    
+    .navbar-toggle {
+        margin-top: 33px;
+        .icon-bar {
+            background: white;
+        }
+    }
+}
+
+h1 {
+    margin: 0px 0px 95px;
+}
+
+.btn {
+    background: transparent;
+    border-radius: 0px;
+    color: white;
+}
+
+.down-arrow {
+    margin: 60px 0px 0px;
+    font-size: 24px;
 }
