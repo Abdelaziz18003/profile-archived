@@ -10,12 +10,26 @@ html, body {
   height: 100%;
   color: white; }
 
+section {
+  padding: 50px 0px; }
+
 a, a:hover, a:active {
   color: white;
   text-decoration: none; }
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5; }
+  p b {
+    text-decoration: underline; }
+
+.side-icon {
+  margin: 60px 0px 0px;
+  font-size: 300px;
+  line-height: 300px;
+  display: block;
+  text-align: center; }
 
 header {
   background-image: url(../img/bg-header.jpg);
@@ -63,14 +77,6 @@ body.canvas-sliding, body.canvas-slid {
 #about {
   background: #c69c6d;
   padding: 50px 0px; }
-  #about p {
-    text-align: justify; }
-  #about .fa-question-circle {
-    margin: 60px 0px 0px;
-    font-size: 300px;
-    line-height: 300px;
-    display: block;
-    text-align: center; }
   #about blockquote {
     margin: 75px 0px 0px;
     padding: 0px;
@@ -79,5 +85,8 @@ body.canvas-sliding, body.canvas-slid {
     text-align: center; }
   #about .author {
     text-align: center; }
+
+#skills {
+  background: #579ee6; }
 
 /*# sourceMappingURL=main.css.map */

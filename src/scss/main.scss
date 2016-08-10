@@ -14,6 +14,10 @@ html, body {
     color: white;
 }
 
+section {
+    padding: 50px 0px;
+}
+
 a, a:hover, a:active {
     color: white;
     text-decoration: none;
@@ -21,7 +25,22 @@ a, a:hover, a:active {
 
 p {
     font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    
+    b {
+        text-decoration: underline;
+    }
 }
+
+.side-icon {
+    margin: 60px 0px 0px;
+    font-size: 300px;
+    line-height: 300px;
+    display: block;
+    text-align: center;
+}
+
 // #01 header styling ________________________________________________________________________________
 
 header {
@@ -93,16 +112,8 @@ body.canvas-sliding, body.canvas-slid {
     background: #c69c6d;
     padding: 50px 0px;
     
-    p {
-        text-align: justify;
-    }
-    
     .fa-question-circle {
-        margin: 60px 0px 0px;
-        font-size: 300px;
-        line-height: 300px;
-        display: block;
-        text-align: center;
+        
     }
     
     blockquote {
@@ -116,4 +127,9 @@ body.canvas-sliding, body.canvas-slid {
     .author {
         text-align: center;
     }
+}
+
+// #03 skills section styling ________________________________________________________________________
+#skills {
+    background: #579ee6;
 }
