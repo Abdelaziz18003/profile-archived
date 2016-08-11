@@ -89,4 +89,13 @@ body.canvas-sliding, body.canvas-slid {
 #skills {
   background: #579ee6; }
 
+#portfolio {
+  background: #555; }
+  #portfolio .thumbnail {
+    border-radius: 0px;
+    height: 160px; }
+    #portfolio .thumbnail img {
+      height: 100%;
+      width: auto; }
+
 /*# sourceMappingURL=main.css.map */
