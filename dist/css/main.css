@@ -70,9 +70,13 @@ body.canvas-sliding, body.canvas-slid {
       height: 50px;
       width: auto; }
   .navbar .navbar-toggle {
-    margin-top: 33px; }
+    margin-top: 33px;
+    border-radius: 0px; }
     .navbar .navbar-toggle .icon-bar {
       background: white; }
+
+.navmenu li a:hover, .navmenu li a:hover {
+  background: grey; }
 
 #about {
   background: #c69c6d;
