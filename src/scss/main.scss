@@ -87,20 +87,41 @@ body.canvas-sliding, body.canvas-slid {
 
 // navbar styling
 .navbar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     height: $heightNavbar;
     border: none;
     
     .navbar-brand {
-        padding-top: 25px;
+        padding-top: 30px;
+        transition: padding $transitionDelay;
         img {
-            height: 50px;
+            height: 35px;
             width: auto;
         }
     }
     
     .navbar-toggle {
-        margin-top: 33px;
+        margin-top: 30px;
+        border-radius: 0px;
+        transition: margin $transitionDelay;
+        .icon-bar {
+            background: white;
+        }
+    }
+}
+
+.navbar.sticky {
+    background: rgba(0, 0, 0, 0.5);
+    
+    .navbar-brand {
+        padding-top: 13px;
+        img {
+            width: auto;
+        }
+    }
+    
+    .navbar-toggle {
+        margin-top: 13px;
         border-radius: 0px;
         .icon-bar {
             background: white;
@@ -110,7 +131,7 @@ body.canvas-sliding, body.canvas-slid {
 
 .navmenu {
     li {
-        a:hover, a:hover {
+        a:hover, a:active {
             background: grey;
         }
     }

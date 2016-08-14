@@ -62,20 +62,36 @@ body.canvas-sliding, body.canvas-slid {
 
 .navbar {
   background: transparent;
-  height: 100px;
+  height: 60px;
   border: none; }
   .navbar .navbar-brand {
-    padding-top: 25px; }
+    padding-top: 30px;
+    -webkit-transition: padding 1s;
+            transition: padding 1s; }
     .navbar .navbar-brand img {
-      height: 50px;
+      height: 35px;
       width: auto; }
   .navbar .navbar-toggle {
-    margin-top: 33px;
-    border-radius: 0px; }
+    margin-top: 30px;
+    border-radius: 0px;
+    -webkit-transition: margin 1s;
+            transition: margin 1s; }
     .navbar .navbar-toggle .icon-bar {
       background: white; }
 
-.navmenu li a:hover, .navmenu li a:hover {
+.navbar.sticky {
+  background: rgba(0, 0, 0, 0.5); }
+  .navbar.sticky .navbar-brand {
+    padding-top: 13px; }
+    .navbar.sticky .navbar-brand img {
+      width: auto; }
+  .navbar.sticky .navbar-toggle {
+    margin-top: 13px;
+    border-radius: 0px; }
+    .navbar.sticky .navbar-toggle .icon-bar {
+      background: white; }
+
+.navmenu li a:hover, .navmenu li a:active {
   background: grey; }
 
 #about {
