@@ -1,35 +1,84 @@
 @media (min-width: 0) {
   .navbar-toggle {
     display: block; } }
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald/Oswald-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald/Oswald-Light.ttf);
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald/Oswald-Bold.ttf);
+  font-weight: 700;
+  font-style: normal; }
+html, body {
+  color: white; }
+
+* {
+  font-family: inherit;
+  color: white; }
+
+h1, h2 {
+  font-family: oswald; }
+
+p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5; }
+
+a, a:hover, a:active {
+  color: white;
+  text-decoration: none; }
+
+.btn {
+  color: white; }
+
+.side-icon {
+  font-size: 300px;
+  line-height: 300px;
+  display: block;
+  text-align: center; }
+
+.down-arrow {
+  font-size: 24px; }
+
+blockquote {
+  font-size: 24px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #333; }
+  blockquote + p {
+    font-size: 14px;
+    color: #333; }
+
+#header h1 {
+  font-weight: 300;
+  line-height: 1.4; }
+#header .navmenu li a {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 100px; }
+#header .navmenu li .fa {
+  padding-right: 20px; }
+
 * {
   color: inherit;
   font-size: inherit;
   text-align: inherit; }
 
 html, body {
-  height: 100%;
-  color: white; }
+  height: 100%; }
 
 section {
   padding: 50px 0px; }
 
-a, a:hover, a:active {
-  color: white;
-  text-decoration: none; }
-
-p {
-  font-size: 16px;
-  text-align: justify;
-  line-height: 1.5; }
-  p b {
-    text-decoration: underline; }
-
 .side-icon {
-  margin: 60px 0px 0px;
-  font-size: 300px;
-  line-height: 300px;
-  display: block;
-  text-align: center; }
+  margin: 60px 0px 0px; }
 
 header {
   background-image: url(../img/bg-header.jpg);
@@ -43,11 +92,9 @@ header {
     margin: 0px 0px 95px; }
   header .btn {
     background: transparent;
-    border-radius: 0px;
-    color: white; }
+    border-radius: 0px; }
   header .down-arrow {
-    margin: 60px 0px 0px;
-    font-size: 24px; }
+    margin: 60px 0px 0px; }
 
 .navmenu-fixed-right {
   left: auto !important; }
@@ -98,9 +145,8 @@ body.canvas-sliding, body.canvas-slid {
   background: #c69c6d;
   padding: 50px 0px; }
   #about blockquote {
-    margin: 75px 0px 0px;
+    margin: 60px 0px 10px;
     padding: 0px;
-    font-size: 24px;
     border: 0px;
     text-align: center; }
   #about .author {

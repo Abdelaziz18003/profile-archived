@@ -1,6 +1,7 @@
 // imports ___________________________________________________________________________________________
-@import "_variables";
+@import "variables";
 @import "media-queries";
+@import "typography";
 
 // general styling ___________________________________________________________________________________
 *{
@@ -11,34 +12,14 @@
 
 html, body {
     height: 100%;
-    color: white;
 }
 
 section {
     padding: 50px 0px;
 }
 
-a, a:hover, a:active {
-    color: white;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-    text-align: justify;
-    line-height: 1.5;
-    
-    b {
-        text-decoration: underline;
-    }
-}
-
 .side-icon {
     margin: 60px 0px 0px;
-    font-size: 300px;
-    line-height: 300px;
-    display: block;
-    text-align: center;
 }
 
 // #01 header styling ________________________________________________________________________________
@@ -61,12 +42,10 @@ header {
     .btn {
         background: transparent;
         border-radius: 0px;
-        color: white;
     }
 
     .down-arrow {
         margin: 60px 0px 0px;
-        font-size: 24px;
     }
 }
 
@@ -149,9 +128,8 @@ body.canvas-sliding, body.canvas-slid {
     }
     
     blockquote {
-        margin: 75px 0px 0px;
+        margin: 60px 0px 10px;
         padding: 0px;
-        font-size: 24px;
         border: 0px;
         text-align: center;
     }
