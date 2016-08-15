@@ -1,0 +1,26 @@
+// defining keyframes ________________________________________________________________________________
+@keyframes y-rot {
+    0% {transform: rotateY(0deg);}
+    70% {transform: rotateY(0deg);}
+    85% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+}
+
+@keyframes angle-rot {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    70% {transform: rotate(30deg);}
+    90% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+// applying animations _______________________________________________________________________________
+.fa-question-circle.side-icon {
+    animation: y-rot 10s linear;
+    animation-iteration-count: infinite;
+}
+
+.fa-wrench.side-icon {
+    transform-origin: 65.76% 28.33%;
+    animation: angle-rot 10s ease infinite;
+}
