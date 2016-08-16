@@ -138,6 +138,11 @@ blockquote {
   -webkit-animation: angle-rot 10s ease infinite;
           animation: angle-rot 10s ease infinite; }
 
+#contact a:hover {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg); }
+
 * {
   color: inherit;
   font-size: inherit;
@@ -238,18 +243,35 @@ body.canvas-sliding, body.canvas-slid {
 
 #contact {
   background: #333; }
-  #contact .social-media ul {
+  #contact ul {
     padding: 0px; }
-  #contact .social-media li {
+  #contact li {
     display: inline-block;
     font-size: 36px;
     margin: 0px;
     padding: 0px;
     height: 50px;
     width: 50px; }
-  #contact .social-media li:not(:last-child) {
+  #contact li:not(:last-child) {
     margin-right: 20px; }
-  #contact .social-media a {
-    display: block; }
+  #contact a {
+    display: block;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;
+    border-radius: 50%; }
+    #contact a:hover {
+      background: white; }
+  #contact .email:hover {
+    background: #DD5044; }
+  #contact .facebook:hover {
+    background: #4862A3; }
+  #contact .twitter:hover {
+    color: #1DA1F2; }
+  #contact .linkedin:hover {
+    background: #0177B5; }
+  #contact .github:hover {
+    color: black; }
+  #contact .bitbucket:hover {
+    color: #215282; }
 
 /*# sourceMappingURL=main.css.map */

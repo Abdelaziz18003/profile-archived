@@ -163,26 +163,54 @@ body.canvas-sliding, body.canvas-slid {
 #contact {
     background: #333;
     
-    .social-media {
-        ul {
-            padding: 0px;
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 36px;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        width: 50px;
+    }
+
+    li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    a {
+        display: block;
+        transition: all 0.7s;
+        border-radius: 50%;
+
+        &:hover {
+            background: white;
         }
-        
-        li {
-            display: inline-block;
-            font-size: 36px;
-            margin: 0px;
-            padding: 0px;
-            height: 50px;
-            width: 50px;
-        }
-        
-        li:not(:last-child) {
-            margin-right: 20px;
-        }
-        
-        a {
-            display: block;
-        }
+    }
+    
+    .email:hover {
+        background: #DD5044;
+    }
+    
+    .facebook:hover {
+        background: #4862A3;
+    }
+    
+    .twitter:hover {
+        color: #1DA1F2;
+    }
+    
+    .linkedin:hover {
+        background: #0177B5;
+    }
+    
+    .github:hover {
+        color: black;
+    }
+    
+    .bitbucket:hover {
+        color: #215282;
     }
 }

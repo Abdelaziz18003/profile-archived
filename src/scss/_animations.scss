@@ -24,3 +24,9 @@
     transform-origin: 65.76% 28.33%;
     animation: angle-rot 10s ease infinite;
 }
+
+#contact {
+    a:hover {
+        transform: rotate(360deg);
+    }
+}
