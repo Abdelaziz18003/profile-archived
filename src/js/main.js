@@ -1,13 +1,7 @@
 
 $(document).ready(function(){
-    $("#share").jsSocials({
-        showLabel: false,
-        showCount: false,
-        shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", 
-                 "whatsapp"]
-    });
-
-    // modify navbar when scrolling
+    
+    // modify navbar when scrolling __________________________________________________________________
     $(window).on("scroll", function(ev){
         if(window.scrollY > 100){
             $(".navbar").addClass("sticky");
@@ -16,5 +10,25 @@ $(document).ready(function(){
             $(".navbar").removeClass("sticky");
         }
     })
-
+    
+    //section scrolling effects ______________________________________________________________________
+    $("a[href=\"#header\"]").click(function(){
+        $("#header").animatescroll();
+    })
+    
+    $("a[href=\"#about\"]").click(function(){
+        $("#about").animatescroll();
+    })
+    
+    $("a[href=\"#skills\"]").click(function(){
+        $("#skills").animatescroll();
+    })
+    
+    $("a[href=\"#portfolio\"]").click(function(){
+        $("#portfolio").animatescroll();
+    })
+    
+    $("a[href=\"#contact\"]").click(function(){
+        $("#contact").animatescroll();
+    })
 })
