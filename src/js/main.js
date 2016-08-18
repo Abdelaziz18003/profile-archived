@@ -11,6 +11,14 @@ $(document).ready(function(){
         }
     })
     
+    // animate typing ________________________________________________________________________________
+
+    $("#typed").typed({
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 50,
+        startDelay: 2000
+    });
+    
     //section scrolling effects ______________________________________________________________________
     $("a[href=\"#header\"]").click(function(){
         $("#header").animatescroll();

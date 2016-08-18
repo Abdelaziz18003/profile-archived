@@ -26,12 +26,16 @@ section {
 // #01 header styling ________________________________________________________________________________
 
 header {
+    min-height: 100%;
     background-image: url(../img/bg-header.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding: 0px;
     
     .overlay {
+        min-height: 700px;
+        display: block;
+        height: 100%;
         background: rgba(0, 0, 0, 0.5);
         padding: 250px 0px 60px;
     }

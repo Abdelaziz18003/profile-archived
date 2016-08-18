@@ -14,7 +14,17 @@
     100% {transform: rotate(0deg);}
 }
 
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 // applying animations _______________________________________________________________________________
+.typed-cursor{
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
 .fa-question-circle.side-icon {
     animation: y-rot 10s linear;
     animation-iteration-count: infinite;
