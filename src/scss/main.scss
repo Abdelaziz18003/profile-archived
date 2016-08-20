@@ -150,9 +150,8 @@ body.canvas-sliding, body.canvas-slid {
     }
 }
 
-// #03 skills section styling ________________________________________________________________________
-#skills {
-    background: #eee;
+// #03 skills & community sections styling ___________________________________________________________
+#skills, #community {
     color: #333;
     
     hr {
@@ -163,19 +162,51 @@ body.canvas-sliding, body.canvas-slid {
     }
     .thumbnail {
         display: block;
-        width: 200px;
-        height: 200px;
-        padding: 35px;
+        width: $thumbnailSize;
+        height: $thumbnailSize;
+        margin: 0px auto;
+        padding: $thumbnailPadding;
+        border: none;
         border-radius: 50%;
         border-color: #333;
-        margin: 0px auto;
+        
         img {
-            
+            height: 100%;
         }
     }
     
     p {
         margin: 20px 0px 0px;
+    }
+}
+
+#skills {
+    background: #eee;
+    
+    .thumbnail {
+        background: transparent;
+        padding: 10px;
+    }
+}
+
+#community {
+    background: #d0d0d0;
+    
+    .thumbnail {
+        margin-top: 10px;
+    }
+    
+    .freecodecamp {
+        background: #4A2B0F;
+    }
+    
+    .github {
+        padding: 0px;
+        background: transparent;
+    }
+    
+    .non-profits {
+        border: 2px solid #06654C;
     }
 }
 
