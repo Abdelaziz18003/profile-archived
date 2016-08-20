@@ -32,6 +32,10 @@ $(document).ready(function(){
         $("#skills").animatescroll();
     })
     
+    $("a[href=\"#community\"]").click(function(){
+        $("#community").animatescroll();
+    })
+    
     $("a[href=\"#portfolio\"]").click(function(){
         $("#portfolio").animatescroll();
     })
