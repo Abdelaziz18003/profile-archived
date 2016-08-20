@@ -279,4 +279,15 @@ body.canvas-sliding, body.canvas-slid {
     .bitbucket:hover {
         color: #215282;
     }
+    
+    .freecodecamp {
+        img {
+            height: 36px;
+            vertical-align: text-bottom;
+        }
+        
+        &:hover {
+            background: #4A2B0F;
+        }
+    }
 }

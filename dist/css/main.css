@@ -336,5 +336,10 @@ body.canvas-sliding, body.canvas-slid {
     color: black; }
   #contact .bitbucket:hover {
     color: #215282; }
+  #contact .freecodecamp img {
+    height: 36px;
+    vertical-align: text-bottom; }
+  #contact .freecodecamp:hover {
+    background: #4A2B0F; }
 
 /*# sourceMappingURL=main.css.map */
