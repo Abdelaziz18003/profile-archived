@@ -257,7 +257,22 @@ body.canvas-sliding, body.canvas-slid {
     text-align: center; }
 
 #skills {
-  background: #579ee6; }
+  background: #eee;
+  color: #333; }
+  #skills hr {
+    border-top-color: #333; }
+  #skills .col-md-4 {
+    display: block; }
+  #skills .thumbnail {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 35px;
+    border-radius: 50%;
+    border-color: #333;
+    margin: 0px auto; }
+  #skills p {
+    margin: 20px 0px 0px; }
 
 #portfolio {
   background: #555; }
