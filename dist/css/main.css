@@ -300,9 +300,15 @@ body.canvas-sliding, body.canvas-slid {
     border-radius: 0px;
     padding: 0px;
     height: 160px; }
-    #portfolio .thumbnail img {
-      height: 100%;
-      width: auto; }
+  #portfolio img {
+    height: 100%;
+    width: auto;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s; }
+    #portfolio img:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
 
 #contact {
   background: #222; }

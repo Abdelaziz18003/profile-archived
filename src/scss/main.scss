@@ -218,9 +218,15 @@ body.canvas-sliding, body.canvas-slid {
         border-radius: 0px;
         padding: 0px;
         height: 160px;
-        img {
-            height: 100%;
-            width: auto;
+    }
+    
+    img {
+        height: 100%;
+        width: auto;
+        transition: all 0.5s;
+        
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }
