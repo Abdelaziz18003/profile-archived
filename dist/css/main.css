@@ -330,6 +330,8 @@ body.canvas-sliding, body.canvas-slid {
     border-radius: 50%; }
     #contact a:hover {
       background: white; }
+  #contact .phone:hover {
+    color: black; }
   #contact .email:hover {
     background: #DD5044; }
   #contact .facebook:hover {
@@ -346,6 +348,6 @@ body.canvas-sliding, body.canvas-slid {
     height: 36px;
     vertical-align: text-bottom; }
   #contact .freecodecamp:hover {
-    background: #4A2B0F; }
+    background: #006400; }
 
 /*# sourceMappingURL=main.css.map */

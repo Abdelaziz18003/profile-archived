@@ -262,6 +262,10 @@ body.canvas-sliding, body.canvas-slid {
         }
     }
     
+    .phone:hover {
+        color: black;
+    }
+    
     .email:hover {
         background: #DD5044;
     }
@@ -293,7 +297,7 @@ body.canvas-sliding, body.canvas-slid {
         }
         
         &:hover {
-            background: #4A2B0F;
+            background: #006400;
         }
     }
 }
