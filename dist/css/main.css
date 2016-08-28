@@ -1,6 +1,3 @@
-@media (min-width: 0) {
-  .navbar-toggle {
-    display: block; } }
 @font-face {
   font-family: oswald;
   src: url(../fonts/Oswald/Oswald-Regular.ttf) format("truetype");
@@ -61,10 +58,7 @@ blockquote {
   line-height: 1.4; }
 #header .navmenu li a {
   font-size: 18px;
-  text-align: left;
-  padding-left: 100px; }
-#header .navmenu li .fa {
-  padding-right: 20px; }
+  text-align: left; }
 
 @-webkit-keyframes y-rot {
   0% {
@@ -180,7 +174,7 @@ header {
   min-height: 100%;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   padding: 0px; }
   header .overlay {
     min-height: 670px;
@@ -242,8 +236,14 @@ body.canvas-sliding, body.canvas-slid {
     .navbar.sticky .navbar-toggle .icon-bar {
       background: white; }
 
-.navmenu li a:hover, .navmenu li a:active {
-  background: grey; }
+.navmenu {
+  width: 250px; }
+  .navmenu li a {
+    padding-left: 50px; }
+  .navmenu li a:hover, .navmenu li a:active {
+    background: grey; }
+  .navmenu li .fa {
+    padding-right: 20px; }
 
 #about {
   background: #7A954F;
@@ -266,8 +266,8 @@ body.canvas-sliding, body.canvas-slid {
     display: block;
     width: 150px;
     height: 150px;
-    margin: 0px auto;
-    padding: 35px;
+    margin: 30px auto 0px;
+    padding: 10px;
     border: none;
     border-radius: 50%;
     border-color: #333; }
@@ -279,13 +279,12 @@ body.canvas-sliding, body.canvas-slid {
 #skills {
   background: #eee; }
   #skills .thumbnail {
-    background: transparent;
-    padding: 10px; }
+    background: transparent; }
 
 #community {
   background: #d0d0d0; }
   #community .thumbnail {
-    margin-top: 10px; }
+    padding: 25px; }
   #community .freecodecamp {
     background: #006400; }
   #community .github {
@@ -299,12 +298,13 @@ body.canvas-sliding, body.canvas-slid {
   #portfolio .thumbnail {
     border-radius: 0px;
     padding: 0px;
-    height: 160px; }
+    height: 160px;
+    overflow: hidden; }
   #portfolio img {
-    height: 100%;
     width: auto;
-    -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+    height: 100%;
+    -webkit-transition: all 1s;
+            transition: all 1s; }
     #portfolio img:hover {
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
@@ -321,8 +321,8 @@ body.canvas-sliding, body.canvas-slid {
     padding: 0px;
     height: 50px;
     width: 50px; }
-  #contact li:not(:last-child) {
-    margin-right: 20px; }
+  #contact li {
+    margin: 0px 10px; }
   #contact a {
     display: block;
     -webkit-transition: all 0.7s;
@@ -345,9 +345,17 @@ body.canvas-sliding, body.canvas-slid {
   #contact .bitbucket:hover {
     color: #215282; }
   #contact .freecodecamp img {
-    height: 36px;
+    height: 40px;
     vertical-align: text-bottom; }
   #contact .freecodecamp:hover {
     background: #006400; }
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; } }
+@media (max-width: 992px) {
+  #portfolio img {
+    width: 100%;
+    height: auto; } }
 
 /*# sourceMappingURL=main.css.map */
