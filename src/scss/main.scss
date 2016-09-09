@@ -18,14 +18,18 @@ section {
     padding: 50px 0px;
 }
 
+p {
+    margin: 0px 0px 15px;
+}
+
 .side-icon {
-    margin: 60px 0px 0px;
+    margin: 150px 0px 0px;
 }
 
 // #01 header styling ________________________________________________________________________________
 
 header {
-    min-height: 100%;
+    min-height: 670px;
     background-image: url(../img/bg-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,8 +190,12 @@ body.canvas-sliding, body.canvas-slid {
 #skills {
     background: #eee;
     
+    .col-xs-6 {
+        padding: 0px;
+    }
     .thumbnail {
         background: transparent;
+        padding: 10px 0px;
     }
 }
 

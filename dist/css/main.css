@@ -37,7 +37,6 @@ a, a:hover, a:active {
 
 .side-icon {
   font-size: 300px;
-  line-height: 300px;
   display: block;
   text-align: center; }
 
@@ -167,11 +166,14 @@ html, body {
 section {
   padding: 50px 0px; }
 
+p {
+  margin: 0px 0px 15px; }
+
 .side-icon {
-  margin: 60px 0px 0px; }
+  margin: 150px 0px 0px; }
 
 header {
-  min-height: 100%;
+  min-height: 670px;
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,8 +266,8 @@ body.canvas-sliding, body.canvas-slid {
     display: block; }
   #skills .thumbnail, #community .thumbnail {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     margin: 30px auto 0px;
     padding: 10px;
     border: none;
@@ -278,8 +280,11 @@ body.canvas-sliding, body.canvas-slid {
 
 #skills {
   background: #eee; }
+  #skills .col-xs-6 {
+    padding: 0px; }
   #skills .thumbnail {
-    background: transparent; }
+    background: transparent;
+    padding: 10px 0px; }
 
 #community {
   background: #d0d0d0; }
@@ -354,6 +359,10 @@ body.canvas-sliding, body.canvas-slid {
   .navbar-toggle {
     display: block; } }
 @media (max-width: 992px) {
+  .side-icon {
+    margin: 0px 0px 20px;
+    font-size: 200px; }
+
   #portfolio img {
     width: 100%;
     height: auto; } }
