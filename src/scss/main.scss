@@ -1,16 +1,19 @@
 // imports ___________________________________________________________________________________________
-@import "variables";
-@import "typography";
-@import "animations";
-
+@import "bootstrap";
+@import "jasny-bootstrap";
+@import "font-awesome/font-awesome";
+@import "custom/variables";
+@import "custom/typography";
+@import "custom/animations";
 // general styling ___________________________________________________________________________________
-*{
+* {
     color: inherit;
     font-size: inherit;
     text-align: inherit;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -27,14 +30,12 @@ p {
 }
 
 // #01 header styling ________________________________________________________________________________
-
 header {
     min-height: 670px;
     background-image: url(../img/bg-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px;
-    
     .overlay {
         min-height: 670px;
         display: block;
@@ -42,22 +43,18 @@ header {
         background: rgba(0, 0, 0, 0.5);
         padding: 250px 0px 60px;
     }
-    
     h1 {
         margin: 0px 0px 95px;
     }
-
     .btn {
         background: transparent;
         border-radius: 0px;
-        
         &:hover {
             background: #7A954F;
             border-color: #7A954F;
             color: white;
         }
     }
-
     .down-arrow {
         margin: 50px 0px 0px;
     }
@@ -65,7 +62,7 @@ header {
 
 // fixing right offcanvas sliding issu
 .navmenu-fixed-right {
-   left: auto !important;
+    left: auto !important;
 }
 
 .navbar-toggle {
@@ -74,7 +71,8 @@ header {
     margin-left: 15px;
 }
 
-body.canvas-sliding, body.canvas-slid {
+body.canvas-sliding,
+body.canvas-slid {
     left: auto !important;
 }
 
@@ -83,7 +81,6 @@ body.canvas-sliding, body.canvas-slid {
     background: rgba(0, 0, 0, 0);
     height: $heightNavbar;
     border: none;
-    
     .navbar-brand {
         padding-top: 30px;
         transition: padding $transitionDelay;
@@ -92,7 +89,6 @@ body.canvas-sliding, body.canvas-slid {
             width: auto;
         }
     }
-    
     .navbar-toggle {
         margin-top: 30px;
         border-radius: 0px;
@@ -105,14 +101,12 @@ body.canvas-sliding, body.canvas-slid {
 
 .navbar.sticky {
     background: rgba(0, 0, 0, 0.5);
-    
     .navbar-brand {
         padding-top: 13px;
         img {
             width: auto;
         }
     }
-    
     .navbar-toggle {
         margin-top: 13px;
         border-radius: 0px;
@@ -128,11 +122,10 @@ body.canvas-sliding, body.canvas-slid {
         a {
             padding-left: 50px;
         }
-        
-        a:hover, a:active {
+        a:hover,
+        a:active {
             background: grey;
         }
-
         .fa {
             padding-right: 20px;
         }
@@ -140,27 +133,24 @@ body.canvas-sliding, body.canvas-slid {
 }
 
 // #02 about section styling _________________________________________________________________________
-
 #about {
     background: #7A954F;
     padding: 50px 0px;
-    
     blockquote {
         margin: 60px 0px 10px;
         padding: 0px;
         border: 0px;
         text-align: center;
     }
-    
     .author {
         text-align: center;
     }
 }
 
 // #03 skills & community sections styling ___________________________________________________________
-#skills, #community {
+#skills,
+#community {
     color: #333;
-    
     hr {
         border-top-color: #333;
     }
@@ -176,12 +166,10 @@ body.canvas-sliding, body.canvas-slid {
         border: none;
         border-radius: 50%;
         border-color: #333;
-        
         img {
             height: 100%;
         }
     }
-    
     p {
         margin: 20px 0px 0px;
     }
@@ -189,7 +177,6 @@ body.canvas-sliding, body.canvas-slid {
 
 #skills {
     background: #eee;
-    
     .col-xs-6 {
         padding: 0px;
     }
@@ -201,20 +188,16 @@ body.canvas-sliding, body.canvas-slid {
 
 #community {
     background: #d0d0d0;
-    
     .thumbnail {
         padding: 25px;
     }
-
     .freecodecamp {
         background: #006400;
     }
-    
     .github {
         padding: 0px;
         background: transparent;
     }
-    
     .non-profits {
         border: 2px solid #06654C;
     }
@@ -223,19 +206,16 @@ body.canvas-sliding, body.canvas-slid {
 // #04 portfolio section styling _____________________________________________________________________
 #portfolio {
     background: #555;
-    
     .thumbnail {
         border-radius: 0px;
         padding: 0px;
         height: 160px;
         overflow: hidden;
     }
-    
     img {
         width: auto;
         height: 100%;
         transition: all 1s;
-        
         &:hover {
             transform: scale(1.2);
         }
@@ -245,11 +225,9 @@ body.canvas-sliding, body.canvas-slid {
 // #05 contact section _______________________________________________________________________________
 #contact {
     background: #222;
-    
     ul {
         padding: 0px;
     }
-
     li {
         display: inline-block;
         font-size: 36px;
@@ -258,55 +236,43 @@ body.canvas-sliding, body.canvas-slid {
         height: 50px;
         width: 50px;
     }
-
     li {
         margin: 0px 10px;
     }
-
     a {
         display: block;
         transition: all 0.7s;
         border-radius: 50%;
-
         &:hover {
             background: white;
         }
     }
-    
     .phone:hover {
         color: black;
     }
-    
     .email:hover {
         background: #DD5044;
     }
-    
     .facebook:hover {
         background: #4862A3;
     }
-    
     .twitter:hover {
         color: #1DA1F2;
     }
-    
     .linkedin:hover {
         background: #0177B5;
     }
-    
     .github:hover {
         color: black;
     }
-    
     .bitbucket:hover {
         color: #215282;
     }
-    
     .freecodecamp {
         img {
             height: 40px;
             vertical-align: text-bottom;
         }
-        
         &:hover {
             background: #006400;
         }
@@ -314,4 +280,4 @@ body.canvas-sliding, body.canvas-slid {
 }
 
 // importing media queries ________________________________________________________________________
-@import "media-queries";
+@import "custom/media-queries";
