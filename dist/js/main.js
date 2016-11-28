@@ -1,15 +1,15 @@
+$(document).ready(function () {
 
-$(document).ready(function(){
-    
     // modify navbar when scrolling ________________________________________________________________________________________________
-    $(window).on("scroll", function(ev){
-        if(window.scrollY > 100){
+    $(window).on("scroll", function (ev) {
+        if (window.scrollY > 100) {
             $(".navbar").addClass("sticky");
         } else if (window.scrollY) {
             $(".navbar").removeClass("sticky");
+
         }
     })
-    
+
     // animate typing ________________________________________________________________________________________________
 
     $("#typed").typed({
@@ -17,25 +17,25 @@ $(document).ready(function(){
         typeSpeed: 50,
         startDelay: 2000
     });
-    
+
     //section scrolling effects ________________________________________________________________________________________________
-    $("a[href=\"#about\"]").click(function(){
+    $("a[href=\"#about\"]").click(function () {
         $("#about").animatescroll();
     })
-    
-    $("a[href=\"#skills\"]").click(function(){
+
+    $("a[href=\"#skills\"]").click(function () {
         $("#skills").animatescroll();
     })
-    
-    $("a[href=\"#community\"]").click(function(){
+
+    $("a[href=\"#community\"]").click(function () {
         $("#community").animatescroll();
     })
-    
-    $("a[href=\"#portfolio\"]").click(function(){
+
+    $("a[href=\"#portfolio\"]").click(function () {
         $("#portfolio").animatescroll();
     })
-    
-    $("a[href=\"#contact\"]").click(function(){
+
+    $("a[href=\"#contact\"]").click(function () {
         $("#contact").animatescroll();
     })
 })
