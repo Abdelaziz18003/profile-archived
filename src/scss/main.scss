@@ -35,6 +35,7 @@ header {
     background-image: url(../img/bg-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 0px;
     .overlay {
         min-height: 670px;
@@ -50,9 +51,9 @@ header {
         background: transparent;
         border-radius: 0px;
         &:hover {
-            background: #7A954F;
-            border-color: #7A954F;
-            color: white;
+            background: white;
+            border-color: white;
+            color: #333;
         }
     }
     .down-arrow {
@@ -137,17 +138,12 @@ body.canvas-slid {
 
 // #02 about section styling _________________________________________________________________________
 #about {
-    background: #7A954F;
+    hr {
+        border-top-color: #333;
+    }
+    color: #333;
+    background: white;
     padding: 50px 0px;
-    blockquote {
-        margin: 60px 0px 10px;
-        padding: 0px;
-        border: 0px;
-        text-align: center;
-    }
-    .author {
-        text-align: center;
-    }
 }
 
 // #03 skills & community sections styling ___________________________________________________________
